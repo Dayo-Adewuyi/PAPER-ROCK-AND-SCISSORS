@@ -1,0 +1,23 @@
+#ROCK-PAPER-SCISSORS
+#PARAMETERS
+puts "Welcome to the ROCK-PAPER-SCISSORS Game!!!"
+puts "whats your move?"
+p_move = gets.chomp.strip
+c_move = ["rock", "paper", "scissors"].sample
+puts "computer played #{c_move}"
+
+if (p_move=="rock" && c_move=="scissors") ||
+  (p_move=="paper" && c_move=="rock") ||
+  (p_move=="scissors" && c_move=="paper")
+  puts "you win"
+elsif 
+(c_move=="rock" && p_move=="scissors") ||
+  (c_move=="paper" && p_move=="rock") ||
+  (c_move=="scissors" && p_move=="paper")
+  puts "computer wins"
+elsif
+  p_move==c_move
+puts "NO VICTOR NOR VANQUISHED!!!"
+else
+  puts "wrong entry, see game title for proper input"
+end
